@@ -5,11 +5,9 @@
     <ItemGroup>
         <ProjectReference Include="..\Metrics.Abstractions\Rocket.Surgery.Metrics.Abstractions.csproj" />
     </ItemGroup>
-	<ItemGroup>
-	</ItemGroup>
-    <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0' or '$(TargetFramework)'=='net461'">
-    </ItemGroup>
+    <ItemGroup></ItemGroup>
+    <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0' or '$(TargetFramework)'=='net461'"></ItemGroup>
     <ItemGroup Condition="'$(TargetFramework)'=='netstandard1.3' or '$(TargetFramework)'=='net451'">
-        <PackageReference Include="System.ValueTuple" Version="4.3.0" />
+        <PackageReference Include="System.ValueTuple" />
     </ItemGroup>
 </Project>
